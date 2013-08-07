@@ -9,6 +9,6 @@ class UpdateMailer < ActionMailer::Base
   def ticket_update(ticket)
     @ticket = ticket
 
-     mail to: "helpdesk@example.com", subject: "Update #{ticket.id}"
+     mail to: "/email_processor", subject: "Update #{ticket.id}"
   end
 end
