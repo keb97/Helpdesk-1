@@ -11,4 +11,5 @@ class TicketMailer < ActionMailer::Base
 
     mail to: "helpdesk@example.com", subject: "New Ticket Created"
   end
+
 end
