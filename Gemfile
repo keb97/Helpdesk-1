@@ -5,7 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+group :production, :staging do
+	gem 'pg'
+end
 
 
 # Gems used only for assets and not required
@@ -36,3 +39,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+	gem "letter_opener"
+	gem 'sqlite3'
+end

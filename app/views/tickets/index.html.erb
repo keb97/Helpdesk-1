@@ -2,20 +2,13 @@
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Ticket Name</th>
   </tr>
 
 <% @tickets.each do |ticket| %>
   <tr>
-    <td><%= ticket.name %></td>
-    <td><%= ticket.description %></td>
-    <td><%= link_to 'Show', ticket %></td>
-    <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
-    <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to ticket.name, ticket %></td>
+
   </tr>
 <% end %>
 </table>
