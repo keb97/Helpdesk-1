@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <%= link_to "Home", tickets_path %><br>
+
+  <% flash.each do |key, value| %>
+    <%= value %>
+  <% end %>
+
 <%= yield %>
 
 </body>

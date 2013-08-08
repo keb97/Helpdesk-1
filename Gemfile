@@ -52,3 +52,6 @@ gem 'griddler'
 gem 'localtunnel'
 
 gem 'postmark'
+gem 'postmark-rails'
+gem 'mail'
+gem 'postmark-mitt'
