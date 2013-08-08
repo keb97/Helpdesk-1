@@ -1,5 +1,5 @@
 class TicketMailer < ActionMailer::Base
-  default from: "helpdesk@example.com"
+   default from: "leandrat@rocketmail.com", to: "lmtejedor@gmail.com", reply_to: ENV["POSTMARK_INBOUND_ADDRESS"]
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -9,7 +9,7 @@ class TicketMailer < ActionMailer::Base
   def new_ticket(ticket)
     @ticket = ticket
 
-    mail to: "helpdesk@example.com", subject: "New Ticket Created"
+    mail(subject: "Ticket:#{@ticket.id}- created")
   end
 
 end

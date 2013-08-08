@@ -82,6 +82,9 @@ GEM
       net-ssh (>= 2.6.5)
     pg (0.16.0)
     polyglot (0.3.3)
+    postmark (1.0.1)
+      json
+      rake
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -144,6 +147,7 @@ DEPENDENCIES
   localtunnel
   mailman
   pg
+  postmark
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sqlite3
